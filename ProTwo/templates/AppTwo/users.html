@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title></title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <h2>Sign Up here</h2>
+      <form  method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" class="btn btn-primary" value="SignUp">
+      </form>
+
+    </div>
+    <!-- {% if users %}
+    <h1>Here are your Users:</h1>
+    <ol>
+      {% for user in users %}
+      <li>Users Info:</li>
+        <ul style="list-style-type:circle">
+          <li>First Name : {{ user.first_name }}</li>
+          <li>Last Name : {{ user.last_name }}</li>
+          <li>Email : {{ user.email }}</li>
+        </ul>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <h2>No Users Found!</h2>
+    {% endif %} -->
+
+  </body>
+</html>

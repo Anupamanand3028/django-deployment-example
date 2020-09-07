@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/myfile.css" %}">
+    <title>Injection media files</title>
+  </head>
+  <body>
+    <h1>This is the Picture Incoming C.E.O</h1>
+    <img src="{% static "images/mypic.jpg" %}" alt="ah - Oh didn't get that!">
+    {{ feed_me }}
+
+  </body>
+</html>
